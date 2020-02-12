@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-weight: 700;
+}
+
+/**************************Header**************************/
+
+ header{
+    width: 100%; 
+    position: fixed;
+    padding-bottom: 18px;
+    padding-top: 0px;
+    z-index: 998;       /*this lets the fixed elements go over the other ones.*/
+}
+#header{
+    width: 100%;
+    height: 102px;  
+    background-color:white;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.19);
+    position: absolute;
+    position: fixed;
+    margin-top: 0px;
+}
+.logo img{
+    float: left;
+    position: absolute;
+    margin-left: 100px;
+}
+#logo{
+    width: 40px;
+    height: auto;
+    margin-top: 33px;
+    margin-left: 100px;
+}
+#mitsuri{
+    width: 100px;
+    margin-top: 37px;
+    margin-left: 140px;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 40px 10px 20px;
+    float: right;
+}
+.menu li a{  
+    color: #0F0F58;
+    text-decoration: none;
+    font-size: 16px;
+}
+#factory{
+    margin-right: 340px;
+}
+#button-mitsumori-1{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    background-color: #0F0F58;
+    color: white; 
+    border: none;
+    float: right;
+    font-size: 12px;
+    border-radius: 2px;
+    right: 100px;  
+} 
+@media only screen and (min-width:688px){
+    #button-mitsumori-1{
+        top: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #logo{
+        margin-left: 40px;
+    }
+    #mitsuri{
+        margin-left: 85px;
+    }
+    #factory{
+        margin-right: 280px;
+    }
+    #button-mitsumori-1{
+        right: 35px;
+    } 
+}
+
+@media screen and (max-width: 687px){
+    header{
+       /* height: 0%;*/
+        position: absolute;
+    }
+    #header{
+        height: 60px;
+    }
+    #logo{
+        margin-top: 10.55px;
+        margin-left: 28.5px;
+    }
+    #mitsuri{
+        display: none;
+    }
+    #factory{
+        margin-right: 20px;
+    }
+    .menu li{
+        padding: 18px 20px 20px;
+    }
+    #button-mitsumori-1{
+        position: fixed;
+        margin: 0 auto;
+        padding: 0;
+        right: 0px;
+        bottom: 0px;
+        margin-bottom: 0%;
+        width: 60px;
+        height: 133px;
+    } 
+}
+/**************************Header End***************************/
+/*****************************Home******************************/
+.home-img1{
+    display: block;
+    position: absolute;
+    padding-top: 61px;
+    width: 60%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-left: 41%;
+}
+.home-img2{
+    display: none;
+}
+.title{
+    float: left;
+    margin-bottom: 30px;
+    margin-top: 170px;
+    color: #515D80;
+    text-align: center;
+    margin-left: 1%;
+    width: 50%;
+}
+#about-mitsuri{
+    font-size: 50px;
+    line-height: 100px;
+}
+#title-line2{
+    font-size: 32px;
+    line-height: 100px;
+}
+#title-line3{
+    font-size: 23px;
+    line-height: 40px;
+}
+
+
+@media screen and (max-width: 1024px){
+
+    .title{
+        
+        margin-left: 0%;
+        width: 57%;
+    }
+    #about-mitsuri{
+        font-size: 35px;
+        line-height: 70px;
+    }
+    #title-line2{
+        font-size: 23px;
+        line-height: 50px;
+    }
+    #title-line3{
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+
+@media screen and (max-width: 687px){
+    .home-img2{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+    }
+    .home-img1{
+        display: none;
+    }
+    
+    .title{
+        color: white;
+        position: absolute;
+        margin-left: 50%;
+        margin-top: 17%;
+        transform: translateX(-50%);
+        width: 80%
+    } 
+
+}
+
+
+@media screen and (max-width: 415px){
+    #about-mitsuri{
+        color: white;
+        font-size: 20px;
+        line-height: 34px;
+    }
+    #title-line2{
+        color: white;
+        font-size: 13px;
+        line-height: 23px;
+    }
+    #title-line3{
+        color: white;
+        font-size: 11px;
+        line-height: 19px;
+    }
+    .title{
+        margin-top: 20%;
+    } 
+}
+/************************Home End**************************/
+/**************************Sections Table****************************/
+.sections-table{
+    margin: 0 auto;
+    padding-top: 18%;
+    margin-bottom: 10px;
+    width: 89%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* top: 30%; */
+    /*position: relative;*/
+}
+.column{
+    color: black;
+    background-color: #0E86A3;
+    margin-top: 10px;
+    width: 279px;
+    height: 150.5px; 
+    border-radius: 5px;
+}
+.blur {
+    float: right;
+    width: 148px;
+    height: 150px;  
+    background-color: rgba(255, 253, 253, 0.116);
+    border-radius: 5px;
+}
+#base-rec1{
+    background-color: rgba(25, 127, 191, 0.952);
+}
+#base-rec2{
+    background-color: rgba(24, 146, 199, 0.856)
+}
+#base-rec3{
+    background-color: #1BA9D3;
+}
+#base-rec4{
+    background-color: rgb(27, 189, 211);
+}
+.btn{
+    width: 131px;
+    height: 102px;
+    float: right;
+    margin-right: 9px;
+    border: none;
+    border-radius: 1px;
+    filter: blur(0px);
+    background-color: rgba(225, 225, 225, 0.103);
+}
+.base-pic {
+    width: 131px;
+    height: 150px;
+    border-radius: 5px 0px 0px 5px;
+}
+.base-pic-blur {
+    position: absolute;
+    z-index: 1;
+    width: 131px;
+    height: 150px;
+    margin-top: -150px;
+    border-radius: 5px 0px 0px 5px;
+}
+.circ-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-top: 35px;
+}
+.section-title {
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 3px;
+}
+.description {
+    font-size: 15px;
+    line-height: 23px;
+    color: white;
+    position: absolute;
+    width: 126px;
+    text-align: left;
+    margin: 0 auto;
+    left: 5px;
+    top: 10px;
+}
+#description-connect {
+    top: 3px;
+    line-height: 20px;
+}
+.read-more {
+    color: white;
+    font-size: 11px;
+    position: absolute;
+    bottom: 3px;
+    right: 21px;
+}
+#read-more-connect {
+    bottom: 0px;
+}
+.read-more-arrow {
+    width: 12px;
+    position: absolute;
+    right: 4px;
+    bottom: 3px;  
+}
+.read-more-arrow-connect {
+    bottom: 0px;
+}
+#base-pic-blur1 {  
+    background-color: rgba(14, 101, 163, 0.822);
+}
+#base-pic-blur2 {
+    background-color: rgba(14, 133, 163, 0.836);
+}
+#base-pic-blur3 {
+    background-color: rgba(14, 153, 163, 0.877);
+}
+#base-pic-blur4 {
+    background-color: rgba(14, 163, 158, 0.808);
+}
+@media screen and (max-width: 1360px){
+    .sections-table{
+        padding-top: 10%;
+    }
+}
+@media screen and (max-width: 687px){
+    .sections-table{
+        padding-top: 65%;
+    }
+}
+
+/**************************Sections Table End************************/
+/*************************Order****************************/
+.order{
+    background-image: url("https://res.cloudinary.com/dji1fbn25/image/upload/c_scale,f_auto,w_1000/v1558339846/background2.png");
+   
+    margin: 0 auto;
+    margin-top: 60px;
+    
+    /* width: 100%;
+    height: auto; */
+   
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position:  -80%;
+    padding: 50px 10% 50px 10%;
+    /*background-position-y:800px;*/
+} 
+
+.rec{
+    background:  rgba(255, 255, 255, 0.700);
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    max-width: 1000px;
+    padding: 40px 100px 40px 100px;
+   /*  position: relative;
+    top: -500; */  
+}
+
+.border{
+    border: 2px solid;
+    margin: 0 auto;
+    width: auto;
+    max-width: 904px;
+    border-color: #000066;
+    padding: 60px 50px 60px 50px;
+}
+.headline{
+    text-align: center;
+    font-size: 25px;
+    line-height: 43px;
+    color: #000066;
+    padding-bottom: 4%;
+}
+.paragraph{
+    margin: 0 auto;
+    max-width: 537px;
+    width: auto;
+    line-height: 27px;
+}
+#button-mitsumori-2{
+    margin: 0 auto;
+    width: 303px;
+    max-width: 300px;
+    height: 80px;  
+    background-color: #F29A0E;
+    color: white; 
+    border: none;
+    font-size: 20px;
+    border-radius: 2px;
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 687px){
+.order {
+    background-size: 90%;
+    padding: 30px 6% 50px 6%;
+}
+.rec {
+    padding: 40px 9% 40px 9%;
+}
+.headline{
+    font-size: 20px;
+    line-height: 34px;
+    padding-bottom: 15%;
+}
+.paragraph{
+    font-size: 13px;
+    line-height: 23px;
+}
+.border{
+    padding: 50px 40px 60px 40px;
+}
+#button-mitsumori-2{
+    display: none;
+}
+}
+/************************************************************/
+
+footer{
+    background-color: #0F0F58;
+    
+    padding-top: 100px;
+}
+.inner{
+    margin: 0 auto;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.lists{
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 15px;
+    list-style-type: none;
+}
+.item a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;  
+    line-height: 30px;
+}
+.inner-img{   
+    margin: 0 auto;
+    padding-top: 4%;
+    justify-content: space-around;
+    width: 20%;
+    height: auto;
+    display: flex;
+}
+.inner-img img{
+    width: 40px;
+    padding: 15px 15px 40px 15px;
+}
+.copyright{
+    color: white;
+    text-align: center;
+    font-size: 8px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 687px){
+
+}
+
